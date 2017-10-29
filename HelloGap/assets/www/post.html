@@ -18,15 +18,47 @@
 <div data-role="page" id="home" data-theme="c">
 
 	<div data-role="content">
-
 		<img src="img/logo.png">
-
+	
+	
+	<center>
+	<div data-role="collapsible">
+	<h3>New Post</h3>
+		<textarea type="text" name="txtarea" style="font-family: Arial;font-size: 12pt;width:100%;height:90vw;"></textarea>
+		<table style="width:95%">
+			<tr>
+				<th><img src="img/icon_picture.png" height="42" width="42"></th>
+				<th><img src="img/icon_video.png" height="42" width="42"></th>
+				<th>
+					<select>
+						<option value="public">Public</option>
+						<option value="private">Private</option>
+						<option value="limited">Limited</option>
+					</select>
+				</th>
+			</tr>
+		</table>
+		<button type="button">Post</button>
+	</div>
+	</center>
+	
+	<ul data-role="listview" data-inset="true">
+		<li><a href="#detail"> <img src="img/Harry Potter.jpg"> <h3>Harry Potter</h3><p>Hi this a test post</p></a> </li>
+		<li><a href="#detail"> <img src="img/pikachu.png"> <h3>Pikachu</h3><p>Does anyone see this?</p></a> </li>
+		<li><a href="#detail"> <img src="img/Hermione Granger.jpg"> <h3>Hermione Granger</h3><p>Hi everyone!</p></a> </li>
+		<li><a href="#detail"> <img src="img/Blastoise.png"> <h3>Blastoise</h3><p>How do I use this?</p></a> </li>
+		<li><a href="#detail"> <img src="img/Charizard.png"> <h3>Charizard</h3><p>Add me!</p></a> </li>
+		<li><a href="#detail"> <img src="img/Ron Weasley.jpg"> <h3>Ron Weasley</h3><p>How is everyone?</p></a> </li>
+		<li><a href="#detail"> <img src="img/Mew.png"> <h3>Mew</h3><p>How do I make a group chat?</p></a> </li>
+		<li><a href="#detail"> <img src="img/Mewtwo.png"> <h3>Mewtwo</h3><p>What's everyone up to?</p></a> </li>
+	</ul>
+	
 	</div>
 
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar">
 			<ul>
-				<li><a href="home.html" data-icon="home">Chats</a></li>
+				<li><a href="home.html" rel="external" data-icon="home">Chats</a></li>
 				<li><a href="friend.html" rel="external" data-icon="plus">Friends</a></li>
 				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
 				<li><a href="post.html" class="ui-btn-active ui-state-persist" rel="external" data-icon="star">Posts</a></li>
